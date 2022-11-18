@@ -1,0 +1,41 @@
+#accordeon {
+    display:flex;
+    margin: 0;
+    padding: 0;
+}
+#accordeon li {
+    display: flex;
+    background-color: #EEE;
+    list-style-type: none;
+    overflow: hidden;
+    width: 200;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 5px;
+    /* Transition */
+    -webkit-transition: all 1s ea   se-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+#accordeon li.actif {
+    width: 317px;
+}
+#accordeon li figure {
+    width: 317px;
+}
+#accordeon li figure figcaption {
+    width: 200px;
+    padding: 10px;
+    vertical-align: baseline;
+}
+
+#accordeon li figure figcaption > * {
+    display: table-cell;
+    vertical-align: top;
+}
+
+figure  {
+    display: flex;
+}
