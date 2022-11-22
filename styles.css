@@ -8,9 +8,9 @@
     background-color: #EEE;
     list-style-type: none;
     overflow: hidden;
-    width: 107;
+    width: 107px;
     margin: 5px;
-    border-radius: 30px;
+    border-radius: 20px;
     padding: 5px;
     /* Transition */
     -webkit-transition: all 1s ea   se-in-out;
@@ -24,18 +24,57 @@
 }
 #accordeon li figure {
     width: 317px;
+    display: flex;
+    margin :10px
 }
 #accordeon li figure figcaption {
     width: 200px;
-    padding: 10px;
-    vertical-align: baseline;
+    padding: 10px;  
+    display: table-cell;
+    
 }
 
 #accordeon li figure figcaption > * {
-    display: table-cell;
+    display: block;
     vertical-align: top;
 }
-
-figure  {
-    display: flex;
+ul#accordeon li figure h3 {
+    margin: 0px;
+    height: 2em;
 }
+
+
+#accordeon li figure img{
+    width: 100px;
+    height: 100px;
+}
+
+#onglet li {
+    display: flex;
+    background-color: #EEE;
+    list-style-type: none;
+    overflow: hidden;
+    width: 107px;
+    margin: 5px;
+    border-radius: 20px;
+    padding: 5px;
+    /* Transition */
+    -webkit-transition: all 1s ea   se-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+#onglet{
+    display:flex;
+    margin: 0;
+    padding: 0;
+}
+   
+#onglet li.actif{
+    background-color: #EEE;
+}
+
+ [role="tablepanel"].actif{
+    opacity: 1; 
+ }

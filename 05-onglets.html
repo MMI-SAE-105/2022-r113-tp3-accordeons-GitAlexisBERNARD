@@ -1,12 +1,33 @@
-x <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
     <title>Onglets</title>
   </head>
   <body>
     <h1>Onglets</h1>
+    <ul id="onglet" x-data="{isOpen:0}">
+      <li :class="{actif1:isOpen === 0,}" @click="isOpen = 0">
+        Onglets 1
+      </li>
+      <li :class="{actif2:isOpen === 1,}" @click="isOpen = 1">
+        Onglets 2
+      </li>
+      <li :class="{actif3:isOpen === 2,}"@click="isOpen = 2">  
+       Onglet 3
+      </li>
+    </ul>
+    <div role="tabpanel" x-show="isOpen == 1">
+     <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, voluptas. Aut saepe, fugiat nulla neque eos debitis voluptate, aspernatur eligendi quod veniam earum tempore facere itaque nihil. Nostrum, id recusandae!
+     </p>
+    </div>
+    <div>
+
+    </div>
   </body>
 </html>
