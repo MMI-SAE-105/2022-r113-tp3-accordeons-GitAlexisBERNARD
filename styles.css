@@ -64,6 +64,7 @@ ul#accordeon li figure h3 {
     -o-transition: all 1s ease-in-out;
     -ms-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
+    opacity: 1;
 }
 #onglet{
     display:flex;
@@ -73,8 +74,9 @@ ul#accordeon li figure h3 {
    
 #onglet li.actif{
     background-color: #EEE;
+    opacity: 1;
 }
 
  [role="tablepanel"].actif{
-    opacity: 1; 
+    opacity: 1;   
  }
