@@ -57,26 +57,28 @@ ul#accordeon li figure h3 {
     width: 107px;
     margin: 5px;
     border-radius: 20px;
-    padding: 5px;
+    padding: 5px; 
     /* Transition */
     -webkit-transition: all 1s ea   se-in-out;
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
     -ms-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
-    opacity: 1;
 }
-#onglet{
-    display:flex;
+#onglet.ul{  
+    display: flex;  
     margin: 0;
     padding: 0;
 }
-   
-#onglet li.actif{
-    background-color: #EEE;
+.opac{
+    opacity: 0.5;
+}
+.onglet{
+    display: none;
+}
+.actif{
+    display: inline;
+}
+.actifli{
     opacity: 1;
 }
-
- [role="tablepanel"].actif{
-    opacity: 1;   
- }
