@@ -75,9 +75,9 @@ ul#accordeon li figure h3 {
 }
 .onglet{
     display: none;
-}
+}  
 .actif{
-    display: inline;
+    display: ;
 }
 .actifli{
     opacity: 1;
